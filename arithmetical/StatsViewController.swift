@@ -30,6 +30,17 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "topScoresCell") as! TopScoresTableViewCell
       
         let currentGame = Games.allGames[indexPath.row]
+<<<<<<< HEAD
+=======
+        
+        cell.gameImageView.image = currentGame.image!
+        cell.gameLabel.text = currentGame.name!
+        
+        if let highscoreArray = UserDefaults.standard.stringArray(forKey: "\(currentGame.name!)_highscore") {
+            cell.highscoreLabel.text = highscoreArray[0]
+            cell.playerLabel.text = highscoreArray[1]
+        }
+>>>>>>> psandovalsegura/master
         
         cell.gameImageView.image = currentGame.image!
         cell.gameLabel.text = currentGame.name!

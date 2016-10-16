@@ -6,3 +6,9 @@
 - Prime factorization
 - Trigonometric identities
 - Complex numbers to polar/exponential form
+
+# Example: Arithmetic games
+![Single-Digit-Addition](http://i.imgur.com/RPEmywN.png)
+
+# Example: Answer games
+![Binary-to-Decimal](http://i.imgur.com/mTsyp6l.png)
