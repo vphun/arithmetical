@@ -9,27 +9,21 @@
 import UIKit
 
 class TopScoresTableViewCell: UITableViewCell {
-
-<<<<<<< HEAD
-    @IBOutlet weak var highScore: UILabel!
-    @IBOutlet weak var gameLabel: UILabel!
-    @IBOutlet weak var gameImageView: UIImageView!
-=======
+    
     @IBOutlet weak var highscoreLabel: UILabel!
     @IBOutlet weak var playerLabel: UILabel!
     @IBOutlet weak var gameLabel: UILabel!
     @IBOutlet weak var gameImageView: UIImageView!
     
->>>>>>> psandovalsegura/master
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }

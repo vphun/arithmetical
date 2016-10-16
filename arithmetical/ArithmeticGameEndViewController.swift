@@ -17,11 +17,7 @@ class ArithmeticGameEndViewController: UIViewController, UITableViewDelegate, UI
     //Data Fields
     var studyQuestions: [[String]]?
     var correctResponses: Int?
-<<<<<<< HEAD
-    var game: ArithmeticGame?
-=======
     var game: ArithmeticGame!
->>>>>>> psandovalsegura/master
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,18 +35,6 @@ class ArithmeticGameEndViewController: UIViewController, UITableViewDelegate, UI
     
     func checkScore() {
         //Check if this is a new highscore
-<<<<<<< HEAD
-        let previousHighscore = UserDefaults.standard.integer(forKey: "\(self.game!.name)_highscore")
-        
-        if (correctResponses! > previousHighscore) {
-            self.newHighscoreLabel.isHidden = false
-            UserDefaults.standard.set(correctResponses!, forKey: "\(self.game!.name)_highscore")
-            
-        }
-        else {
-            self.newHighscoreLabel.isHidden = true
-        }
-=======
         let previousHighscore = UserDefaults.standard.integer(forKey: "\(self.game.name!)_highscore")
         
         if (correctResponses! > previousHighscore) {
@@ -82,7 +66,6 @@ class ArithmeticGameEndViewController: UIViewController, UITableViewDelegate, UI
         
         //Present alert input field
         self.present(alert, animated: true, completion: nil)
->>>>>>> psandovalsegura/master
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
